@@ -3,7 +3,14 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Виртуелен Музеј · Охридски Времеплов</title>
+<title>Охридски Времеплов · Интерактивен Виртуелен Музеј</title>
+<meta name="description" content="Патувај низ 2000 години охридска историја. 9 тематски соби, 360° виртуелен тур, интерактивни квизови и античкиот театар — сè на едно место.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Охридски Времеплов · Интерактивен Виртуелен Музеј">
+<meta property="og:description" content="Патувај низ 2000 години охридска историја. 9 тематски соби, 360° виртуелен тур и античкиот театар.">
+<meta property="og:image" content="LOGO-20260519T121015Z-3-001/LOGO/h_Bronze_OTT.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="LOGO-20260519T121015Z-3-001/LOGO/bronze_OTT.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400&family=Barlow:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap" rel="stylesheet">
@@ -499,6 +506,32 @@ footer{background:#060608;padding:60px 64px 40px;border-top:1px solid rgba(200,1
 .footer-social a{font-size:8px;letter-spacing:.17em;text-transform:uppercase;color:rgba(245,242,236,.22);text-decoration:none;transition:color .3s}
 .footer-social a:hover{color:rgba(200,162,58,.8)}
 
+/* FLOATING TICKET BUTTON */
+.float-ticket{
+  position:fixed;bottom:36px;right:36px;z-index:400;
+  width:112px;height:112px;border-radius:50%;
+  display:flex;flex-direction:column;align-items:center;justify-content:center;
+  text-decoration:none;overflow:hidden;
+  font-family:'Barlow Condensed',sans-serif;font-size:13px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;
+  color:#f5f2ec;text-shadow:0 1px 6px rgba(0,0,0,.8);
+  opacity:0;pointer-events:none;
+  transform:translateY(12px) scale(.88);
+  transition:opacity .45s var(--ease-expo),transform .45s var(--ease-expo)
+}
+.float-ticket::before{
+  content:'';position:absolute;inset:-6px;border-radius:50%;
+  background:#000 url('LOGO-20260519T121015Z-3-001/LOGO/FD7UA.jpg') center/cover no-repeat;
+  transition:transform 1.4s cubic-bezier(.25,.46,.45,.94)
+}
+.float-ticket::after{
+  content:'';position:absolute;inset:0;border-radius:50%;
+  background:radial-gradient(circle,rgba(0,0,0,.45) 30%,rgba(0,0,0,.15) 70%,transparent 100%)
+}
+.float-ticket.visible{opacity:1;pointer-events:auto;transform:none}
+.float-ticket:hover::before{transform:rotate(180deg)}
+.float-ticket:hover{transform:scale(1.07)}
+.float-ticket-txt{position:relative;z-index:1;line-height:1.4;text-align:center}
+
 /* ANIMATIONS */
 @keyframes clipRevealUp{from{clip-path:inset(0 0 100% 0)}to{clip-path:inset(0 0 0% 0)}}
 @keyframes fadeUp{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:none}}
@@ -948,6 +981,11 @@ nav.solid .nav-burger span{background:var(--dark)}
   </div>
 </section>
 
+<!-- FLOATING TICKET BTN -->
+<a href="#cta" id="float-ticket" class="float-ticket" aria-label="Купи билет">
+  <span class="float-ticket-txt">Купи<br>билет</span>
+</a>
+
 <!-- FOOTER -->
 <footer>
   <div class="footer-top">
@@ -996,6 +1034,13 @@ nav.solid .nav-burger span{background:var(--dark)}
     if(count===100)setTimeout(()=>loader.classList.add('out'),300);
   },40);
 })();
+
+// FLOATING TICKET BUTTON
+const heroEl=document.querySelector('.hero');
+const floatBtn=document.getElementById('float-ticket');
+new IntersectionObserver(([e])=>{
+  floatBtn.classList.toggle('visible',!e.isIntersecting);
+},{threshold:0.1}).observe(heroEl);
 
 // NAV
 window.addEventListener('scroll',()=>{
