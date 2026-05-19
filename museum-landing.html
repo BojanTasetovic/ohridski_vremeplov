@@ -37,8 +37,8 @@
   --s-xs:8px;--s-sm:16px;--s-md:32px;--s-lg:56px;--s-xl:80px;--s-2xl:120px;
   --text-xs:0.5rem;--text-sm:0.8125rem;--text-body:1rem;
 }
-html{scroll-behavior:smooth;scrollbar-width:thin;scrollbar-color:rgba(138,105,20,.35) transparent}
-body{background:var(--bg);color:var(--dark);font-family:'Barlow',sans-serif;font-weight:300;overflow-x:hidden}
+html{scroll-behavior:smooth;scrollbar-width:thin;scrollbar-color:rgba(138,105,20,.35) transparent;overflow-x:hidden;max-width:100%}
+body{background:var(--bg);color:var(--dark);font-family:'Barlow',sans-serif;font-weight:300;overflow-x:hidden;max-width:100%}
 
 /* GRAIN */
 .grain{position:fixed;inset:0;z-index:9997;pointer-events:none}
@@ -377,7 +377,7 @@ nav.solid .nav-btn:hover{background:var(--dark)!important;color:var(--bg)!import
   color:rgba(240,237,230,.55)
 }
 @media(max-width:860px){
-  .teatar-content{grid-template-columns:1fr;gap:48px;padding:100px 24px}
+  .teatar-content{grid-template-columns:1fr;gap:48px;padding:80px 24px}
   .teatar-imgs{grid-template-rows:260px 140px}
 }
 
