@@ -571,12 +571,14 @@ nav.solid .nav-burger span{background:var(--dark)}
   nav.solid{padding:14px 32px}
   .nav-links{display:none}
   .nav-burger{display:flex}
-  .nav-logo img{height:40px;max-width:200px;object-fit:contain}
+  .nav-logo img{height:36px;max-width:180px;object-fit:contain;object-position:left}
 }
 @media(max-width:1024px){
   nav{padding:20px 24px}
   nav.solid{padding:14px 24px}
   .hero{padding:70px 24px 48px}
+  .hero-actions{flex-direction:column;align-items:stretch;gap:12px}
+  .btn-gold,.btn-ghost{text-align:center;padding:16px 24px;white-space:nowrap}
   .sense-strip{grid-template-columns:1fr}
   .sense-item{border-right:none;border-bottom:1px solid var(--border)}
   .immersion-section{grid-template-columns:1fr}
