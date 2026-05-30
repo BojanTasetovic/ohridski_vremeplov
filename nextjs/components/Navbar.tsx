@@ -32,7 +32,7 @@ export default function Navbar() {
     <>
       <nav ref={navRef} id="nav">
         <Link href="/" className="nav-logo">
-          <Image src="/logo/h_Bronze_OTT.png" alt="Охридски Времеплов" height={52} width={220} style={{ height: 52, width: 'auto' }} />
+          <Image src="/logo/h_Bronze_OTT.png" alt="Охридски Времеплов" width={0} height={0} sizes="400px" priority loading="eager" unoptimized style={{ height: '52px', width: 'auto' }} />
         </Link>
         <ul className="nav-links" style={{ fontFamily: 'var(--font-barlow)' }}>
           <li><Link href="/#sobi">Соби</Link></li>

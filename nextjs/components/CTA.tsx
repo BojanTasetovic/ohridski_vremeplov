@@ -6,7 +6,7 @@ export default function CTA() {
     <section className="cta-section" id="cta">
       <div className="cta-grid-bg" />
       <div className="cta-glow" />
-      <Image className="cta-bg-logo" src="/logo/bronze_OTT.png" alt="" width={680} height={680} />
+      <Image className="cta-bg-logo" src="/logo/bronze_OTT.png" alt="" width={0} height={0} sizes="min(680px,90vw)" style={{ width: 'min(680px,90vw)', height: 'auto' }} />
       <div className="cta-bg-text" style={{ fontFamily: 'var(--font-barlow-condensed)' }}>ВЛЕЗ</div>
       <div style={{ position: 'relative', zIndex: 2 }}>
         <h2 className="cta-h2 rev" style={{ fontFamily: 'var(--font-barlow-condensed)' }}>

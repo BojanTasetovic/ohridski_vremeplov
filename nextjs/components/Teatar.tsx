@@ -36,11 +36,11 @@ export default function Teatar() {
           </Link>
         </div>
         <div className="teatar-imgs rev on">
-          <div className="teatar-img-main">
-            <Image src="/rooms/teatar-main.png" alt="Античкиот театар — реконструкција" fill style={{ objectFit: 'cover' }} />
+          <div className="teatar-img-main" style={{ position: 'relative' }}>
+            <Image src="/rooms/teatar-main.png" alt="Античкиот театар — реконструкција" fill sizes="50vw" style={{ objectFit: 'cover' }} />
           </div>
-          <div className="teatar-img-small">
-            <Image src="/rooms/teatar-small.jpg" alt="Античкиот театар денес" fill style={{ objectFit: 'cover', filter: 'brightness(.75)' }} />
+          <div className="teatar-img-small" style={{ position: 'relative' }}>
+            <Image src="/rooms/teatar-small.jpg" alt="Античкиот театар денес" fill sizes="50vw" style={{ objectFit: 'cover', filter: 'brightness(.75)' }} />
             <span className="teatar-img-label" style={{ fontFamily: 'var(--font-barlow)' }}>Театарот денес</span>
           </div>
         </div>

@@ -6,12 +6,15 @@ import Footer from '@/components/Footer';
 import FloatingTicket from '@/components/FloatingTicket';
 import type { Metadata } from 'next';
 
+type Props = { params: Promise<{ slug: string }> };
+
 export function generateStaticParams() {
   return rooms.map((r) => ({ slug: r.slug }));
 }
 
-export function generateMetadata({ params }: { params: { slug: string } }): Metadata {
-  const room = getRoomBySlug(params.slug);
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { slug } = await params;
+  const room = getRoomBySlug(slug);
   if (!room) return {};
   return {
     title: `${room.nameEm} · Охридски Времеплов`,
@@ -19,8 +22,9 @@ export function generateMetadata({ params }: { params: { slug: string } }): Meta
   };
 }
 
-export default function RoomPage({ params }: { params: { slug: string } }) {
-  const room = getRoomBySlug(params.slug);
+export default async function RoomPage({ params }: Props) {
+  const { slug } = await params;
+  const room = getRoomBySlug(slug);
   if (!room) notFound();
 
   return (
@@ -46,9 +50,11 @@ export default function RoomPage({ params }: { params: { slug: string } }) {
         </div>
       </div>
       <div className="room-detail-body">
-        <p className="room-detail-text" style={{ fontFamily: 'var(--font-barlow)' }}>
-          {room.text}
-        </p>
+        {room.text.split('\n\n').map((para, i) => (
+          <p key={i} className="room-detail-text" style={{ fontFamily: 'var(--font-barlow)' }}>
+            {para}
+          </p>
+        ))}
         <Link href="/" className="btn-primary" style={{ fontFamily: 'var(--font-barlow)' }}>
           <span>← Назад кон музејот</span>
         </Link>

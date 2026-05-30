@@ -4,10 +4,20 @@ import { useEffect } from 'react';
 export default function ScrollReveal() {
   useEffect(() => {
     const io = new IntersectionObserver(
-      (entries) => entries.forEach((e) => { if (e.isIntersecting) e.target.classList.add('on'); }),
+      (entries) =>
+        entries.forEach((e) => {
+          if (e.isIntersecting) {
+            e.target.classList.add('on');
+            io.unobserve(e.target);
+          }
+        }),
       { threshold: 0.06 }
     );
-    document.querySelectorAll('.rev').forEach((el) => io.observe(el));
+
+    requestAnimationFrame(() => {
+      document.querySelectorAll('.rev:not(.on)').forEach((el) => io.observe(el));
+    });
+
     return () => io.disconnect();
   }, []);
 

@@ -73,6 +73,9 @@ export default function Rooms() {
           <h2 className="rooms-h2" style={{ fontFamily: 'var(--font-barlow-condensed)' }}>
             Соби на <em>музејот</em>
           </h2>
+          <p className="rooms-desc rev" style={{ fontFamily: 'var(--font-barlow)', fontSize: 'var(--text-body)', color: 'var(--muted)', lineHeight: 1.85, maxWidth: 640, marginTop: 20 }}>
+            Филмско патување низ Охридското Езеро што ја слави неговата вечност. Од геолошкото создавање, преку антиката, мистичниот среден век, Отоманскиот период, до пулсот на XX век и денешниот жив ритам. Проекција преку која ќе ја почувствувате магијата на Охрид во друга димензија — како патување низ времето што го обединува минатото и сегашноста во едно доживување. Инспиративна приказна за континуитетот на животот и културата, за водата што памети и за градот што дише со векови.
+          </p>
         </div>
         <div style={{ display: 'flex', alignItems: 'center', gap: 20 }}>
           <div className="rooms-nav">

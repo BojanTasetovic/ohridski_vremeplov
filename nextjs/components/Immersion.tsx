@@ -20,6 +20,7 @@ export default function Immersion() {
           src="/images/immersion-right.jpg"
           alt=""
           fill
+          sizes="50vw"
           className="immersion-right-photo"
           style={{ objectFit: 'cover', objectPosition: 'center top', opacity: 0.82 }}
         />
