@@ -1,4 +1,8 @@
 .agents/
 skills-lock.json
-
 .vercel
+
+# Next.js app (dev artifacts)
+nextjs/node_modules/
+nextjs/.next/
+nextjs/.vercel/
