@@ -6,7 +6,7 @@ export default function Footer() {
     <footer>
       <div className="footer-top">
         <div className="footer-brand">
-          <Image src="/logo/h_Bronze_OTT.png" alt="Охридски Времеплов" width={0} height={0} sizes="400px" unoptimized style={{ height: '56px', width: 'auto', opacity: 0.9, marginBottom: 16 }} />
+          <Image src="/logo/h_Bronze_OTT.png" alt="Охридски Времеплов" width={4934} height={750} sizes="400px" style={{ height: '56px', width: 'auto', opacity: 0.9, marginBottom: 16 }} />
           <div className="footer-logo-tag" style={{ fontFamily: 'var(--font-barlow)' }}>
             „Историјата не застарува — таа чека да биде открена."
           </div>

@@ -35,7 +35,10 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="mk" className={`${barlow.variable} ${barlowCondensed.variable}`}>
+    <html lang="mk" className={`${barlow.variable} ${barlowCondensed.variable}`} data-scroll-behavior="smooth">
+      <head>
+        <link rel="preload" as="image" href="/logo/h_Bronze_OTT.png" />
+      </head>
       <body>{children}</body>
     </html>
   );

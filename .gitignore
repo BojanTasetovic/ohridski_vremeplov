@@ -2,7 +2,24 @@
 skills-lock.json
 .vercel
 
-# Next.js app (dev artifacts)
+# Next.js
+node_modules/
+.next/
 nextjs/node_modules/
 nextjs/.next/
 nextjs/.vercel/
+
+# Source media (large files, not web assets)
+2. */
+4. */
+5. */
+6. */
+7. */
+8. */
+9. */
+10. */
+LOGO-*/
+Marketing-*/
+pic/
+viber_image_*.jpg
+*.docx

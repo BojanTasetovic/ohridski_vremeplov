@@ -9,7 +9,7 @@
   --ease-expo:cubic-bezier(0.16,1,0.3,1);--ease-circ:cubic-bezier(0.25,1,0.5,1);
   --text-sm:0.8125rem;--text-body:1rem;
 }
-html{scroll-behavior:smooth;scrollbar-width:thin;scrollbar-color:rgba(138,105,20,.35) transparent;overflow-x:hidden;max-width:100%}
+html{scrollbar-width:thin;scrollbar-color:rgba(138,105,20,.35) transparent;overflow-x:hidden;max-width:100%}
 body{background:var(--bg);color:var(--dark);font-family:var(--font-barlow),sans-serif;font-weight:300;overflow-x:hidden;max-width:100%}
 
 .grain{position:fixed;inset:0;z-index:9997;pointer-events:none}
