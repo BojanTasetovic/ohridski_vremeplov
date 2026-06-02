@@ -18,6 +18,7 @@ export default function FloatingTicket() {
 
   return (
     <Link ref={btnRef} href="/#cta" className="float-ticket" aria-label="Купи билет">
+      <video className="float-ticket-video" src="/logo/logo-animated.mp4" autoPlay muted loop playsInline />
       <span className="float-ticket-txt" style={{ fontFamily: 'var(--font-barlow-condensed)' }}>
         Купи<br />билет
       </span>

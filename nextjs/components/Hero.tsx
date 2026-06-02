@@ -12,7 +12,15 @@ export default function Hero() {
 
   return (
     <section className={`hero${mounted ? ' hero--animate' : ''}`}>
-      <div className="hero-img-bg" />
+      <video
+        className="hero-video-bg"
+        src="/videos/hero.mp4"
+        autoPlay
+        muted
+        loop
+        playsInline
+      />
+      <div className="hero-video-over" />
       <div className="hero-grid" />
       <div className="hero-glow" />
       <div className="hero-content">

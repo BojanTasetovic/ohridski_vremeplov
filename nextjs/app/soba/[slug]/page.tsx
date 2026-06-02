@@ -1,5 +1,6 @@
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
+import Image from 'next/image';
 import { rooms, getRoomBySlug } from '@/data/rooms';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
@@ -31,14 +32,25 @@ export default async function RoomPage({ params }: Props) {
     <>
       <Navbar />
       <div className="room-detail-hero">
-        <div
-          className="room-detail-bg"
-          style={{
-            background: room.image
-              ? `url('${room.image}') center/cover no-repeat`
-              : room.gradient,
-          }}
-        />
+        {room.video ? (
+          <video
+            className="room-detail-bg room-detail-bg--video"
+            src={room.video}
+            autoPlay
+            muted
+            loop
+            playsInline
+          />
+        ) : (
+          <div
+            className="room-detail-bg"
+            style={{
+              background: room.image
+                ? `url('${room.image}') center/cover no-repeat`
+                : room.gradient,
+            }}
+          />
+        )}
         <div className="room-detail-over" />
         <div className="room-detail-content">
           <div className="room-detail-tag" style={{ fontFamily: 'var(--font-barlow)' }}>
@@ -55,8 +67,19 @@ export default async function RoomPage({ params }: Props) {
             {para}
           </p>
         ))}
-        <Link href="/" className="btn-primary" style={{ fontFamily: 'var(--font-barlow)' }}>
-          <span>← Назад кон музејот</span>
+      </div>
+      {room.images && room.images.length > 0 && (
+        <div className={`room-gallery${room.slug === 'umetnost' ? ' room-gallery--art' : ''}`}>
+          {room.images.map((src, i) => (
+            <div key={i} className="room-gallery-item">
+              <Image src={src} alt="" fill sizes="(max-width:768px) 100vw, 33vw" style={{ objectFit: room.slug === 'umetnost' ? 'contain' : 'cover' }} unoptimized />
+            </div>
+          ))}
+        </div>
+      )}
+      <div className="room-detail-footer">
+        <Link href="/sobi" className="btn-primary" style={{ fontFamily: 'var(--font-barlow)' }}>
+          <span>← Назад кон собите</span>
         </Link>
       </div>
       <FloatingTicket />

@@ -5,6 +5,8 @@ export interface Room {
   nameEm: string;
   desc: string;
   image?: string;
+  video?: string;
+  images?: string[];
   gradient: string;
   text: string;
 }
@@ -26,6 +28,16 @@ export const rooms: Room[] = [
     name: 'Виртуелен',
     nameEm: 'Аквариум',
     desc: 'Дигитална жива лабораторија — секој допир оживува ендемски вид.',
+    image: '/rooms/akvarium/ribi.png',
+    video: '/rooms/akvarium.mp4',
+    images: [
+      '/rooms/akvarium/ribi.png',
+      '/rooms/akvarium/jajca.png',
+      '/rooms/akvarium/krap.png',
+      '/rooms/akvarium/svetlina.png',
+      '/rooms/akvarium/rastenie.png',
+      '/rooms/akvarium/sungjer.png',
+    ],
     gradient: 'linear-gradient(155deg,#c2cedd 0%,#8fa8c2 100%)',
     text: 'Дигитална жива лабораторија за биолошката разновидност на Охридското Езеро, живо доживување каде со секој допир „оживуваат" ендемските видови што постојат само овде — секој контакт открива нова тајна од подводниот свет. Ова е шанса да се почувствува езерото како жив организам.\n\nУникатна можност да нурнете во виртуелен аквариум и да ја доживеете магијата на природата што реагира на вашето присуство.',
   },
@@ -36,6 +48,22 @@ export const rooms: Room[] = [
     nameEm: 'Уметноста',
     desc: 'Насликај се во охридски стил — стани дел од живата традиција на градот.',
     image: '/rooms/umetnost.png',
+    images: [
+      '/rooms/umetnost/izida.png',
+      '/rooms/umetnost/dedal.png',
+      '/rooms/umetnost/zlatna-maska.png',
+      '/rooms/umetnost/mozaicna-mapa.jpg',
+      '/rooms/umetnost/vasilij-nikola.jpg',
+      '/rooms/umetnost/kliment-relef.jpg',
+      '/rooms/umetnost/blagovestenie.jpg',
+      '/rooms/umetnost/imaret.jpg',
+      '/rooms/umetnost/chinar.jpg',
+      '/rooms/umetnost/samuel.jpg',
+      '/rooms/umetnost/manasievski.jpg',
+      '/rooms/umetnost/dimo-kliment.jpg',
+      '/rooms/umetnost/submerged.jpg',
+      '/rooms/umetnost/fakac-na-krst.jpg',
+    ],
     gradient: 'linear-gradient(155deg,#d4c2cc 0%,#b890a8 100%)',
     text: 'Интерактивна изложба на уметноста низ вековите. Кратките видеа и дигитални репродукции на познати дела ја претставуваат убавината на творештвото. Ќе можете и да се насликате себеси во охридски стил, со што ќе станете дел од живата традиција на градот.\n\nИнспиративно патување што ја слави моќта на уметноста да обединува и да создава нови перспективи, каде секој посетител станува дел од приказната.',
   },
@@ -66,6 +94,13 @@ export const rooms: Room[] = [
     nameEm: 'Архитектурата',
     desc: 'Виртуелна прошетка низ објекти — аугментирана реалност открива нови перспективи.',
     image: '/rooms/arhitektura.jpg',
+    video: '/rooms/arhitektura.mp4',
+    images: [
+      '/rooms/arhitektura/tvrdina.png',
+      '/rooms/arhitektura/teatar.png',
+      '/rooms/arhitektura/balneum.png',
+      '/rooms/arhitektura/crkva.jpg',
+    ],
     gradient: 'linear-gradient(155deg,#b8cccc 0%,#5a9090 100%)',
     text: 'Виртуелна прошетка низ неколку објекти ја носи душата на различните епохи.\n\nИнтерактивните прозорци со аугментирана реалност откриваат нови перспективи на значајни градби, овозможувајќи да се почувствува нивната убавина и значење на еден современ и инспиративен начин.',
   },
@@ -76,6 +111,14 @@ export const rooms: Room[] = [
     nameEm: 'Писменоста',
     desc: 'Писменоста како живо наследство — јазикот и неговата моќ да обединува.',
     image: '/rooms/pismenost.jpg',
+    images: [
+      '/rooms/pismenost/p7.jpg',
+      '/rooms/pismenost/p3.jpg',
+      '/rooms/pismenost/p12.png',
+      '/rooms/pismenost/p2.jpg',
+      '/rooms/pismenost/p6.jpg',
+      '/rooms/pismenost/p5.jpg',
+    ],
     gradient: 'linear-gradient(155deg,#d8cca0 0%,#b8a058 100%)',
     text: 'Овде ќе ја почувствувате писменоста како живо наследство, преку просторот за учење и приказна од охридското народно или авторско творештво.\n\nПреку паметна технологија ќе го допрете духот на писменоста и ќе разберете зошто е важно зачувувањето на јазикот и неговата моќ да обединува.',
   },
@@ -86,6 +129,11 @@ export const rooms: Room[] = [
     nameEm: 'Војните',
     desc: 'Емоционално патување низ воената историја — цената на мирот и силата на издржливоста.',
     image: '/rooms/vojni.png',
+    images: [
+      '/rooms/vojni/bitka.jpeg',
+      '/rooms/vojni/pishtal-nozh.jpg',
+      '/rooms/vojni/sveshtenik.jpg',
+    ],
     gradient: 'linear-gradient(155deg,#cca898 0%,#8a4830 100%)',
     text: 'Емоционално патување низ воената историја на Охрид. Моќна приказна за жртвите и страдањата, за тежината на воените дејства проследено со звучни ефекти, потенцирајќи ја цената на мирот и силата на човечката издржливост.\n\nПроекцијата е покана да се почувствува историјата како ехо, да се оддаде почит и да се разбере значењето на мирот денес.',
   },
