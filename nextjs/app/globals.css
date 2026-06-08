@@ -379,3 +379,7 @@ footer{background:#060608;padding:60px 64px 40px;border-top:1px solid rgba(200,1
   .teatar-content{grid-template-columns:1fr;gap:48px;padding:80px 24px}
   .teatar-imgs{grid-template-rows:260px 140px}
 }
+.probno-wrap .nav-links a{font-size:13px!important;letter-spacing:.18em!important}
+.probno-wrap .nav-btn{font-size:12px!important;letter-spacing:.18em!important}
+.probno-wrap .btn-gold{font-size:13px!important;letter-spacing:.22em!important}
+.probno-wrap .btn-ghost{font-size:13px!important;letter-spacing:.22em!important}

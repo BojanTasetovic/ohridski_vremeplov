@@ -16,7 +16,7 @@ import ScrollReveal from '@/components/ScrollReveal';
 
 export default function Probno() {
   return (
-    <>
+    <div className="probno-wrap">
       <Loader />
       <div className="grain" aria-hidden="true" />
       <Navbar />
@@ -33,6 +33,6 @@ export default function Probno() {
       <FloatingTicket />
       <Footer />
       <ScrollReveal />
-    </>
+    </div>
   );
 }
