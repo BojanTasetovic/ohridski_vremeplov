@@ -2,7 +2,7 @@
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
 
-export default function Hero() {
+export default function Hero({ videoSrc = '/videos/hero.mp4' }: { videoSrc?: string }) {
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
@@ -14,7 +14,7 @@ export default function Hero() {
     <section className={`hero${mounted ? ' hero--animate' : ''}`}>
       <video
         className="hero-video-bg"
-        src="/videos/hero.mp4"
+        src={videoSrc}
         autoPlay
         muted
         loop
