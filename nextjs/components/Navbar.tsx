@@ -41,7 +41,6 @@ export default function Navbar() {
           <li><Link href="/#kviz">Квизови</Link></li>
           <li><Link href="/#cta">Посети</Link></li>
           <li><Link href="/#cta" className="nav-btn">Купи билет</Link></li>
-          <li><Link href="/probno" className="nav-btn" style={{ background: 'rgba(180,140,60,0.25)', border: '1px solid rgba(180,140,60,0.5)' }}>Пробна верзија</Link></li>
         </ul>
         <button ref={burgerRef} className="nav-burger" onClick={toggleMenu} aria-label="Мени">
           <span /><span /><span />
@@ -54,7 +53,6 @@ export default function Navbar() {
         <Link href="/#kviz" className="rev" onClick={closeMenu}>Квизови</Link>
         <Link href="/#cta" className="rev" onClick={closeMenu}>Посети</Link>
         <Link href="/#cta" className="nav-mobile-btn rev" onClick={closeMenu}>Купи билет</Link>
-        <Link href="/probno" className="nav-mobile-btn rev" onClick={closeMenu} style={{ marginTop: '8px', opacity: 0.7 }}>Пробна верзија</Link>
       </div>
     </>
   );
