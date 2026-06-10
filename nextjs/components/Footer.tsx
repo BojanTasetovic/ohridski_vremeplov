@@ -28,7 +28,7 @@ export default function Footer() {
           ))}
         </div>
       </div>
-      <div className="footer-map">
+      <div id="lokacija" className="footer-map">
         <div className="footer-map-info">
           <div>
             <div className="footer-map-label" style={{ fontFamily: 'var(--font-barlow)' }}>Каде сме</div>

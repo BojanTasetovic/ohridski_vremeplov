@@ -36,10 +36,8 @@ export default function Navbar() {
         </Link>
         <ul className="nav-links" style={{ fontFamily: 'var(--font-barlow)' }}>
           <li><Link href="/#sobi">Соби</Link></li>
-          <li><Link href="/#teatar">Кино</Link></li>
-          <li><Link href="/#novo">Актуелно</Link></li>
-          <li><Link href="/#kviz">Квизови</Link></li>
-          <li><Link href="/#cta">Посети</Link></li>
+          <li><Link href="/za-nas">За Нас</Link></li>
+          <li><Link href="/#lokacija">Локација и Контакт</Link></li>
           <li><Link href="/#cta" className="nav-btn">Купи билет</Link></li>
         </ul>
         <button ref={burgerRef} className="nav-burger" onClick={toggleMenu} aria-label="Мени">
@@ -48,10 +46,8 @@ export default function Navbar() {
       </nav>
       <div ref={mobileRef} className="nav-mobile" style={{ fontFamily: 'var(--font-barlow-condensed)' }}>
         <Link href="/#sobi" className="rev" onClick={closeMenu}>Соби</Link>
-        <Link href="/#teatar" className="rev" onClick={closeMenu}>Кино</Link>
-        <Link href="/#novo" className="rev" onClick={closeMenu}>Актуелно</Link>
-        <Link href="/#kviz" className="rev" onClick={closeMenu}>Квизови</Link>
-        <Link href="/#cta" className="rev" onClick={closeMenu}>Посети</Link>
+        <Link href="/za-nas" className="rev" onClick={closeMenu}>За Нас</Link>
+        <Link href="/#lokacija" className="rev" onClick={closeMenu}>Локација и Контакт</Link>
         <Link href="/#cta" className="nav-mobile-btn rev" onClick={closeMenu}>Купи билет</Link>
       </div>
     </>
