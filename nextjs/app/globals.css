@@ -377,8 +377,10 @@ footer{background:#060608;padding:40px 64px 32px;border-top:1px solid rgba(200,1
   .cta-info{flex-wrap:wrap;gap:44px}
   footer{padding:48px 24px 32px}
   .footer-top{flex-direction:column;gap:52px}
+  .footer-brand img{max-width:360px;height:auto !important}
   .footer-nav{flex-wrap:wrap;gap:40px}
   .footer-map{grid-template-columns:1fr}
+  .footer-map-city{font-size:clamp(22px,6vw,32px)}
   .footer-map-info{border-right:none;border-bottom:1px solid rgba(200,162,58,.10);padding:36px 24px}
   .footer-map-frame{height:240px}
   .footer-bottom{flex-direction:column;gap:14px;text-align:center}
@@ -496,6 +498,7 @@ footer{background:#060608;padding:40px 64px 32px;border-top:1px solid rgba(200,1
 
 @media(max-width:1024px){
   .vlez-hero{padding:140px 24px 72px}
+  .vlez-h1{font-size:clamp(34px,9vw,52px)}
   .vlez-tickets{padding:56px 24px}
   .vlez-split{grid-template-columns:1fr}
   .vlez-included{padding:56px 24px;border-right:none;border-bottom:1px solid var(--border)}
