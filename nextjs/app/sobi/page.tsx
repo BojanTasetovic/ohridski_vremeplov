@@ -7,8 +7,9 @@ import FloatingTicket from '@/components/FloatingTicket';
 import { rooms } from '@/data/rooms';
 
 export const metadata: Metadata = {
-  title: 'Соби · Охридски Времеплов',
-  description: 'Истражувај ги сите 9 тематски соби на Охридски Времеплов — патување низ вековите на охридската историја.',
+  title: 'Соби на Музејот',
+  description: 'Истражувај ги сите 10 тематски соби на Охридски Времеплов — аудио-визуелно патување низ вековите на охридската историја.',
+  alternates: { canonical: 'https://ohridski-vremeplov.vercel.app/sobi' },
 };
 
 export default function SobiPage() {

@@ -21,14 +21,14 @@ export default function Home() {
       <div className="grain" aria-hidden="true" />
       <Navbar />
       <Hero videoSrc="/videos/hero-theatre.mp4" />
-      <SenseStrip />
+      {/* <SenseStrip /> */}
       <Immersion />
       <Stats />
-      <Rooms />
-      <Teatar />
-      <News />
-      <Reviews />
-      <Quiz />
+      {/* <Rooms /> */}
+      {/* <Teatar /> */}
+      {/* <News /> */}
+      {/* <Reviews /> */}
+      {/* <Quiz /> */}
       <CTA />
       <FloatingTicket />
       <Footer />

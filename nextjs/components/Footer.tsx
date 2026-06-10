@@ -7,25 +7,6 @@ export default function Footer() {
       <div className="footer-top">
         <div className="footer-brand">
           <Image src="/logo/h_Bronze_OTT.png" alt="Охридски Времеплов" width={4934} height={750} sizes="400px" style={{ height: '56px', width: 'auto', opacity: 0.9, marginBottom: 16 }} />
-          <div className="footer-logo-tag" style={{ fontFamily: 'var(--font-barlow)' }}>
-            „Историјата не застарува — таа чека да биде открена."
-          </div>
-        </div>
-        <div className="footer-nav">
-          {[
-            { title: 'Истражувај', links: [{ label: 'Сите соби', href: '/sobi' }, { label: '360° Тур', href: '#' }, { label: 'Историска Мапа', href: '#' }, { label: 'Временска Линија', href: '#' }] },
-            { title: 'Учи', links: [{ label: 'Квизови', href: '/#kviz' }, { label: 'За ученици', href: '#' }, { label: 'За наставници', href: '#' }, { label: 'Значки', href: '#' }] },
-            { title: 'Инфо', links: [{ label: 'За нас', href: '/za-nas' }, { label: 'Членство', href: '#' }, { label: 'Контакт', href: '#' }, { label: 'Приватност', href: '#' }] },
-          ].map((col) => (
-            <div key={col.title} className="footer-col">
-              <h5 style={{ fontFamily: 'var(--font-barlow)' }}>{col.title}</h5>
-              <ul>
-                {col.links.map((l) => (
-                  <li key={l.label}><Link href={l.href} style={{ fontFamily: 'var(--font-barlow)' }}>{l.label}</Link></li>
-                ))}
-              </ul>
-            </div>
-          ))}
         </div>
       </div>
       <div id="lokacija" className="footer-map">
@@ -51,7 +32,7 @@ export default function Footer() {
         </div>
       </div>
       <div className="footer-bottom">
-        <div className="footer-copy" style={{ fontFamily: 'var(--font-barlow)' }}>© 2025 Виртуелен Музеј · Сите права задржани</div>
+        <div className="footer-copy" style={{ fontFamily: 'var(--font-barlow)' }}>© 2025 Виртуелен Музеј · Сите права задржани · <Link href="#" style={{ fontFamily: 'var(--font-barlow)', color: 'inherit', textDecoration: 'none' }}>Приватност</Link></div>
         <div className="footer-social">
           {['Facebook', 'Instagram', 'YouTube'].map((s) => (
             <Link key={s} href="#" style={{ fontFamily: 'var(--font-barlow)' }}>{s}</Link>

@@ -24,20 +24,16 @@ export default function Hero({ videoSrc = '/videos/hero.mp4' }: { videoSrc?: str
       <div className="hero-grid" />
       <div className="hero-glow" />
       <div className="hero-content">
-        <div className="hero-overline">
-          Виртуелен Музеј · Охрид · 2025
-        </div>
         <h1 className="hero-h1">
-          Нова Атракција<br />
-          Во Охрид —<br />
+          Нова Атракција Во Охрид<br />
           <em>Интерактивно Доживување</em>
         </h1>
         <p className="hero-sub">
-          Десет соби. Минатото на Охрид никогаш поблиску до тебе. Искуство, не експонат – биди дел од едно незаборавно, интерактивно патување во срцето на градот.
+          Биди дел од едно незаборавно, интерактивно патување во срцето на градот.
         </p>
         <div className="hero-actions">
-          <Link href="/#sobi" className="btn-ghost">Истражувај соби</Link>
-          <Link href="/#cta" className="btn-gold">Купи билет →</Link>
+          <Link href="/soba/vlez" className="btn-gold">Купи билет →</Link>
+          <Link href="/sobi" className="btn-ghost">Истражувај соби</Link>
         </div>
         <div className="hero-scroll">
           <span>Скролај</span>
