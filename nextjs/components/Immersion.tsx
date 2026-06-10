@@ -17,14 +17,13 @@ export default function Immersion() {
       </div>
       <div className="immersion-right rev d1">
         <Image
-          src="/images/immersion-right.jpg"
+          src="/images/immersion-right-new.jpg"
           alt=""
           fill
           sizes="50vw"
           className="immersion-right-photo"
-          style={{ objectFit: 'cover', objectPosition: 'center top', opacity: 0.82 }}
+          style={{ objectFit: 'cover', objectPosition: 'center top' }}
         />
-        <div className="immersion-right-glow" />
       </div>
     </section>
   );

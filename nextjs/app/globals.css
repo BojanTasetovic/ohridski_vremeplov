@@ -342,12 +342,13 @@ footer{background:#060608;padding:40px 64px 32px;border-top:1px solid rgba(200,1
   nav.solid{padding:14px 32px}
   .nav-links{display:none}
   .nav-burger{display:flex}
-  .nav-logo img{height:36px;max-width:180px;object-fit:contain;object-position:left}
+  .nav-logo img{height:60px;max-width:300px;object-fit:contain;object-position:left}
 }
 @media(max-width:1024px){
   nav{padding:20px 24px}
   nav.solid{padding:14px 24px}
   .hero{padding:150px 24px 50px}
+  .hero-h1{font-size:clamp(28px,8vw,52px);line-height:1.15}
   .hero-actions{flex-direction:column;align-items:center;gap:12px;width:100%}
   .btn-gold,.btn-ghost{text-align:center;padding:16px 24px;width:100%;max-width:320px}
   .sense-strip{grid-template-columns:1fr}
