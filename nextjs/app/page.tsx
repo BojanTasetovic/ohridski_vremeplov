@@ -20,7 +20,7 @@ export default function Home() {
       <Loader />
       <div className="grain" aria-hidden="true" />
       <Navbar />
-      <Hero />
+      <Hero videoSrc="/videos/hero-theatre.mp4" />
       <SenseStrip />
       <Immersion />
       <Stats />
