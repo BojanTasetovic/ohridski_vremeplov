@@ -44,7 +44,7 @@ export default function Navbar() {
       <nav ref={navRef} id="nav">
         <Link href="/" className="nav-logo">
           <Image
-            src="/logo/h_Bronze_OTT.png"
+            src="/logo/h_OTT_k.png"
             alt="Охридски Времеплов"
             width={4934} height={750}
             sizes="400px"

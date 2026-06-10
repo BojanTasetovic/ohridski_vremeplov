@@ -51,7 +51,7 @@ export const metadata: Metadata = {
       'Откријте ги 2000 години охридска историја низ 10 тематски интерактивни соби со VR/AR и ласерски проектори во Охрид.',
     images: [
       {
-        url: '/logo/h_Bronze_OTT.png',
+        url: '/logo/h_OTT_k.png',
         width: 1200,
         height: 630,
         alt: 'Охридски Времеплов — Интерактивен Музеј',
@@ -62,7 +62,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Охридски Времеплов · Интерактивен Музеј во Охрид',
     description: 'Откријте ги 2000 години охридска историја низ 10 интерактивни соби.',
-    images: ['/logo/h_Bronze_OTT.png'],
+    images: ['/logo/h_OTT_k.png'],
   },
   icons: {
     icon: '/logo/bronze_OTT.png',
@@ -85,7 +85,7 @@ const jsonLd = {
         'Интерактивен дигитален музеј во Охрид со 10 тематски соби, VR/AR технологија и аудио-визуелно патување низ 2000 години историја.',
       url: BASE,
       logo: `${BASE}/logo/bronze_OTT.png`,
-      image: `${BASE}/logo/h_Bronze_OTT.png`,
+      image: `${BASE}/logo/h_OTT_k.png`,
       address: {
         '@type': 'PostalAddress',
         addressLocality: 'Охрид',
@@ -119,7 +119,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="mk" className={`${barlow.variable} ${barlowCondensed.variable}`} data-scroll-behavior="smooth">
       <head>
-        <link rel="preload" as="image" href="/logo/h_Bronze_OTT.png" />
+        <link rel="preload" as="image" href="/logo/h_OTT_k.png" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
