@@ -36,8 +36,8 @@ export default function Hero({ videoSrc = '/videos/hero.mp4' }: { videoSrc?: str
           Десет соби. Минатото на Охрид никогаш поблиску до тебе. Искуство, не експонат – биди дел од едно незаборавно, интерактивно патување во срцето на градот.
         </p>
         <div className="hero-actions">
-          <Link href="/#sobi" className="btn-gold">Истражувај соби</Link>
-          <Link href="/#cta" className="btn-ghost">Купи билет →</Link>
+          <Link href="/#sobi" className="btn-ghost">Истражувај соби</Link>
+          <Link href="/#cta" className="btn-gold">Купи билет →</Link>
         </div>
         <div className="hero-scroll">
           <span>Скролај</span>
