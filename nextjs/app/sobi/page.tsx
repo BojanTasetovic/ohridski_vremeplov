@@ -35,14 +35,25 @@ export default function SobiPage() {
       <div className="sobi-grid">
         {rooms.map((room) => (
           <Link key={room.slug} href={`/soba/${room.slug}`} className="sobi-card">
-            <div
-              className="sobi-card-bg"
-              style={{
-                background: room.image
-                  ? `url('${room.image}') center/cover no-repeat`
-                  : room.gradient,
-              }}
-            />
+            {room.cardVideo ? (
+              <video
+                className="sobi-card-bg sobi-card-bg--video"
+                src={room.cardVideo}
+                autoPlay
+                muted
+                loop
+                playsInline
+              />
+            ) : (
+              <div
+                className="sobi-card-bg"
+                style={{
+                  background: room.image
+                    ? `url('${room.image}') center/cover no-repeat`
+                    : room.gradient,
+                }}
+              />
+            )}
             <div className="sobi-card-over" />
             <div className="sobi-card-body">
               <div className="sobi-card-tag">{room.tag}</div>

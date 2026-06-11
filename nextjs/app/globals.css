@@ -293,6 +293,7 @@ footer{background:#060608;padding:40px 64px 32px;border-top:1px solid rgba(200,1
 .sobi-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:4px;padding:40px 64px 100px}
 .sobi-card{position:relative;height:460px;overflow:hidden;text-decoration:none;display:block}
 .sobi-card-bg{position:absolute;inset:0;background-size:cover;background-position:center;transition:transform .8s cubic-bezier(.2,0,.2,1)}
+.sobi-card-bg--video{width:100%;height:100%;object-fit:cover}
 .sobi-card:hover .sobi-card-bg{transform:scale(1.06)}
 .sobi-card-over{position:absolute;inset:0;background:linear-gradient(to top,rgba(7,7,8,.92) 0%,rgba(7,7,8,.2) 55%,transparent 100%);transition:opacity .4s}
 .sobi-card:hover .sobi-card-over{opacity:.97}

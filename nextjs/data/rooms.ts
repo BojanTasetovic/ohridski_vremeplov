@@ -6,6 +6,7 @@ export interface Room {
   desc: string;
   image?: string;
   video?: string;
+  cardVideo?: string;
   images?: string[];
   gradient: string;
   text: string;
@@ -73,6 +74,8 @@ export const rooms: Room[] = [
     name: 'Соба',
     nameEm: 'Традиции',
     desc: 'Научи македонски ора — танцот како мост меѓу минатото и сегашноста.',
+    video: '/videos/kultura-hero.mp4',
+    cardVideo: '/videos/kultura-card.mp4',
     image: '/rooms/kultura.jpg',
     gradient: 'linear-gradient(155deg,#d8d0a8 0%,#b8a860 100%)',
     text: 'Во овој простор се слави животот, културата оживува преку движење. Секој чекор се претвора во игра, тука ќе научите да играте традиционални македонски ора.\n\nУчењето станува забава, а танцот — мост меѓу минатото и сегашноста. Незаборавно искуство што ја слави живата традиција и ја претвора во современа авантура.',
