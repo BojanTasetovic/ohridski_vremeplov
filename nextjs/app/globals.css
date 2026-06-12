@@ -328,8 +328,8 @@ footer{background:#060608;padding:40px 64px 32px;border-top:1px solid rgba(200,1
   .sobi-card{
     flex:0 0 100%;
     width:100%;
-    height:88vw;
-    min-height:380px;
+    height:85vh;
+    min-height:420px;
     scroll-snap-align:start;
     border-radius:0;
   }
@@ -342,7 +342,7 @@ footer{background:#060608;padding:40px 64px 32px;border-top:1px solid rgba(200,1
     align-items:center;
     justify-content:center;
     position:absolute;
-    top:calc(24px + 44vw);
+    top:calc(24px + 42.5vh);
     transform:translateY(-50%);
     width:44px;height:44px;
     border-radius:50%;
