@@ -98,7 +98,7 @@ nav.solid .nav-burger span{background:var(--dark)}
 .sense-desc{font-size:0.875rem;line-height:1.85;color:var(--muted)}
 
 .immersion-section{display:grid;grid-template-columns:1fr 1fr;min-height:78vh;background:var(--bg)}
-.immersion-left{padding:72px 80px 72px 64px;display:flex;flex-direction:column;justify-content:center;border-right:1px solid var(--border)}
+.immersion-left{padding:72px 80px 72px 64px;display:flex;flex-direction:column;justify-content:center}
 .section-label{font-size:8px;letter-spacing:.5em;text-transform:uppercase;color:var(--gold);margin-bottom:36px;display:flex;align-items:center;gap:16px}
 .section-label::before{content:'';display:block;width:32px;height:1px;background:var(--gold)}
 .section-h2{font-family:var(--font-barlow-condensed),sans-serif;font-size:clamp(52px,7vw,104px);font-weight:300;line-height:.92;color:var(--dark);margin-bottom:36px}
@@ -109,9 +109,8 @@ nav.solid .nav-burger span{background:var(--dark)}
 .btn-primary:hover::before{transform:translateX(0)}
 .btn-primary:hover{transform:translateY(-2px)}
 .btn-primary span{position:relative;z-index:1}
-.immersion-right{position:relative;display:flex;align-items:center;justify-content:center;background:var(--bg2);overflow:hidden}
-.immersion-right-glow{position:absolute;inset:0;background:radial-gradient(ellipse 70% 60% at 60% 40%,rgba(200,162,58,.12),transparent);pointer-events:none;z-index:2}
-.immersion-right-photo{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center top;opacity:.82;z-index:1}
+.immersion-right{position:relative;display:flex;align-items:center;justify-content:center;background:#fff;overflow:hidden}
+.immersion-right-photo{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;object-position:center center;z-index:1}
 
 .stats-row{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--border);border-bottom:1px solid var(--border);background:var(--bg2)}
 .i-stat{padding:48px 40px 48px 44px;border-right:1px solid var(--border);text-align:left}
@@ -272,7 +271,8 @@ footer{background:#060608;padding:40px 64px 32px;border-top:1px solid rgba(200,1
 .float-ticket-txt{position:relative;z-index:1;line-height:1.4;text-align:center}
 
 /* ZA NAS PAGE */
-.za-nas-hero{min-height:50vh;position:relative;background:var(--hero);display:flex;align-items:flex-end;padding:80px 64px 72px}
+.za-nas-hero{min-height:50vh;position:relative;background:var(--hero);display:flex;align-items:flex-end;padding:80px 64px 72px;overflow:hidden}
+.za-nas-hero-video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.6;pointer-events:none}
 .za-nas-hero-over{position:absolute;inset:0;background:linear-gradient(to top,var(--hero) 0%,rgba(7,7,8,.5) 60%,rgba(7,7,8,.7) 100%)}
 .za-nas-hero-content{position:relative;z-index:2}
 .za-nas-eyebrow{font-family:var(--font-barlow),sans-serif;font-size:8px;letter-spacing:.5em;text-transform:uppercase;color:var(--gold2);margin-bottom:20px;display:flex;align-items:center;gap:14px}

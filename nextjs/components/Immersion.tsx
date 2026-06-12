@@ -22,7 +22,6 @@ export default function Immersion() {
           fill
           sizes="50vw"
           className="immersion-right-photo"
-          style={{ objectFit: 'cover', objectPosition: 'center top' }}
         />
       </div>
     </section>
