@@ -31,6 +31,7 @@ export const rooms: Room[] = [
     desc: 'Дигитална жива лабораторија — секој допир оживува ендемски вид.',
     image: '/rooms/akvarium/ribi.png',
     video: '/rooms/akvarium.mp4',
+    cardVideo: '/videos/priroda-card.mp4',
     images: [
       '/rooms/akvarium/ribi.png',
       '/rooms/akvarium/jajca.png',
@@ -98,6 +99,7 @@ export const rooms: Room[] = [
     desc: 'Виртуелна прошетка низ објекти — аугментирана реалност открива нови перспективи.',
     image: '/rooms/arhitektura.jpg',
     video: '/rooms/arhitektura.mp4',
+    cardVideo: '/videos/arhitektura-card.mp4',
     images: [
       '/rooms/arhitektura/tvrdina.png',
       '/rooms/arhitektura/teatar.png',

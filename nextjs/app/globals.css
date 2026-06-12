@@ -307,8 +307,80 @@ footer{background:#060608;padding:40px 64px 32px;border-top:1px solid rgba(200,1
   .sobi-intro{padding:40px 24px 0}
   .sobi-grid{grid-template-columns:1fr 1fr;padding:32px 24px 80px}
 }
+/* carousel wrapper — nav + dots hidden on desktop */
+.sobi-carousel{position:relative}
+.sobi-nav{display:none}
+.sobi-dots{display:none}
+
 @media(max-width:640px){
-  .sobi-grid{grid-template-columns:1fr}
+  .sobi-intro{padding:32px 20px 0}
+  .sobi-grid{
+    display:flex;
+    flex-direction:row;
+    overflow-x:auto;
+    scroll-snap-type:x mandatory;
+    -webkit-overflow-scrolling:touch;
+    gap:0;
+    padding:24px 0 56px;
+    scrollbar-width:none;
+  }
+  .sobi-grid::-webkit-scrollbar{display:none}
+  .sobi-card{
+    flex:0 0 100%;
+    width:100%;
+    height:88vw;
+    min-height:380px;
+    scroll-snap-align:start;
+    border-radius:0;
+  }
+  .sobi-card-name{font-size:22px}
+  .sobi-card-desc{display:none}
+
+  /* nav arrows */
+  .sobi-nav{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    position:absolute;
+    top:calc(24px + 44vw);
+    transform:translateY(-50%);
+    width:44px;height:44px;
+    border-radius:50%;
+    border:none;
+    background:rgba(10,9,8,.45);
+    backdrop-filter:blur(12px);
+    -webkit-backdrop-filter:blur(12px);
+    color:#f5f2ec;
+    font-size:26px;
+    line-height:1;
+    cursor:pointer;
+    z-index:10;
+    transition:background .25s;
+  }
+  .sobi-nav:active{background:rgba(200,162,58,.55)}
+  .sobi-nav--prev{left:16px}
+  .sobi-nav--next{right:16px}
+
+  /* dots */
+  .sobi-dots{
+    display:flex;
+    justify-content:center;
+    gap:7px;
+    padding-bottom:32px;
+  }
+  .sobi-dot{
+    width:6px;height:6px;
+    border-radius:50%;
+    border:none;
+    background:rgba(200,162,58,.3);
+    cursor:pointer;
+    padding:0;
+    transition:background .3s, transform .3s;
+  }
+  .sobi-dot--active{
+    background:var(--gold2);
+    transform:scale(1.4);
+  }
 }
 
 .room-detail-hero{min-height:60vh;position:relative;overflow:hidden;background:var(--hero);display:flex;align-items:flex-end;padding:80px 64px}
