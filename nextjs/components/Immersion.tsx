@@ -21,6 +21,7 @@ export default function Immersion() {
           alt=""
           fill
           sizes="50vw"
+          priority
           className="immersion-right-photo"
         />
       </div>

@@ -119,7 +119,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="mk" className={`${barlow.variable} ${barlowCondensed.variable}`} data-scroll-behavior="smooth">
       <head>
-        <link rel="preload" as="image" href="/logo/h_OTT_k.png" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}

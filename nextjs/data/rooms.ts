@@ -50,6 +50,7 @@ export const rooms: Room[] = [
     nameEm: 'Уметноста',
     desc: 'Насликај се во охридски стил — стани дел од живата традиција на градот.',
     image: '/rooms/umetnost.png',
+    video: '/videos/umetnost-hero.mp4',
     images: [
       '/rooms/umetnost/izida.png',
       '/rooms/umetnost/dedal.png',
