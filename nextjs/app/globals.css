@@ -402,6 +402,7 @@ footer{background:#060608;padding:40px 64px 32px;border-top:1px solid rgba(200,1
 .room-gallery--art .room-gallery-item:hover img{transform:scale(1.03)}
 .room-detail-footer{padding:48px 64px}
 .room-detail-text{font-size:var(--text-body);line-height:1.9;color:var(--muted);margin-bottom:48px}
+.room-detail-inline-video{width:100%;aspect-ratio:16/9;object-fit:cover;display:block}
 
 @keyframes clipRevealUp{from{clip-path:inset(0 0 100% 0)}to{clip-path:inset(0 0 0% 0)}}
 @keyframes fadeUp{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:none}}

@@ -32,7 +32,7 @@ export default function Hero({ videoSrc = '/videos/hero.mp4' }: { videoSrc?: str
           Биди дел од едно незаборавно, интерактивно патување во срцето на градот.
         </p>
         <div className="hero-actions">
-          <Link href="/soba/vlez" className="btn-gold">Купи билет →</Link>
+          <Link href="/kupi-bilet" className="btn-gold">Купи билет →</Link>
           <Link href="/sobi" className="btn-ghost">Истражувај соби</Link>
         </div>
         <div className="hero-scroll">

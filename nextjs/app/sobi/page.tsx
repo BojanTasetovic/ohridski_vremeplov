@@ -28,9 +28,7 @@ export default function SobiPage() {
       </div>
 
       {/* INTRO */}
-      <div className="sobi-intro">
-        <p>Филмско патување низ Охридското Езеро што ја слави неговата вечност. Од геолошкото создавање, преку антиката, мистичниот среден век, Отоманскиот период, до пулсот на XX век и денешниот жив ритам.</p>
-      </div>
+      <div className="sobi-intro" />
 
       {/* GRID / CAROUSEL */}
       <SobiCarousel rooms={rooms} />

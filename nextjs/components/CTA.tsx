@@ -12,7 +12,7 @@ export default function CTA() {
         <h2 className="cta-h2 rev" style={{ fontFamily: 'var(--font-barlow-condensed)' }}>
           Резервирај го<br /><em>своето</em> место
         </h2>
-        <Link href="/soba/vlez" className="btn-cta rev on" style={{ fontFamily: 'var(--font-barlow)' }}>Купи билет</Link>
+        <Link href="/kupi-bilet" className="btn-cta rev on" style={{ fontFamily: 'var(--font-barlow)' }}>Купи билет</Link>
         <div className="cta-info rev">
           {[
             { label: 'Достапност', val: 'Секојдневно\n24/7 онлајн' },

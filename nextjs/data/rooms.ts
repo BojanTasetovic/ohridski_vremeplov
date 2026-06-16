@@ -14,12 +14,14 @@ export interface Room {
 
 export const rooms: Room[] = [
   {
-    slug: 'vlez',
+    slug: 'patuvanje-niz-vremeto',
     tag: '00 · Влез',
     name: 'Патување низ',
     nameEm: 'Времето',
     desc: 'Почетна точка. Земи карта, одбери рута и тргни.',
     image: '/images/room-entrance.jpg',
+    video: '/videos/patuvanje-niz-vremeto-hero.mp4',
+    cardVideo: '/videos/vlez-card.mp4',
     gradient: 'linear-gradient(155deg,#d4c9a8 0%,#b8a878 50%,#9a8850 100%)',
     text: 'Добредојдовте во Охридски Времеплов. Овде започнува вашето патување низ вековите.',
   },
@@ -99,7 +101,7 @@ export const rooms: Room[] = [
     nameEm: 'Архитектурата',
     desc: 'Виртуелна прошетка низ објекти — аугментирана реалност открива нови перспективи.',
     image: '/rooms/arhitektura.jpg',
-    video: '/rooms/arhitektura.mp4',
+    video: '/videos/arhitektura-hero.mp4',
     cardVideo: '/videos/arhitektura-card.mp4',
     images: [
       '/rooms/arhitektura/tvrdina.png',

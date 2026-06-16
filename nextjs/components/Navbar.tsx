@@ -57,7 +57,7 @@ export default function Navbar() {
           <li><Link href="/sobi">Соби</Link></li>
           <li><Link href="/za-nas">За Нас</Link></li>
           <li><Link href="/#lokacija">Локација и Контакт</Link></li>
-          <li><Link href="/soba/vlez" className="nav-btn">Купи билет</Link></li>
+          <li><Link href="/kupi-bilet" className="nav-btn">Купи билет</Link></li>
         </ul>
         <button
           className={`nav-burger${open ? ' open' : ''}`}
@@ -107,7 +107,7 @@ export default function Navbar() {
                 exit={{ opacity: 0 }}
                 transition={{ duration: 0.5 * d, delay: 0.42, ease: EASE }}
               >
-                <Link href="/soba/vlez" className="nav-mobile-btn" onClick={close}>
+                <Link href="/kupi-bilet" className="nav-mobile-btn" onClick={close}>
                   Купи билет
                 </Link>
               </motion.div>

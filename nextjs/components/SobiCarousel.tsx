@@ -36,6 +36,7 @@ export default function SobiCarousel({ rooms }: { rooms: Room[] }) {
               <video
                 className="sobi-card-bg sobi-card-bg--video"
                 src={room.cardVideo}
+                style={room.slug === 'vojni' ? { objectPosition: 'center 90%' } : undefined}
                 autoPlay muted loop playsInline
               />
             ) : (
