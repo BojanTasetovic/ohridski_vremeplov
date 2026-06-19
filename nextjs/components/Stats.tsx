@@ -5,7 +5,7 @@ const stats = [
   { target: 10, label: 'Тематски соби', suffix: '', unit: '', text: '' },
   { target: 40, label: 'Интерактивни дигитални експонати', suffix: '+', unit: '', text: '' },
   { target: 668, label: 'Простор за едукација и забава', suffix: '', unit: 'м²', text: '' },
-  { target: 0, label: 'Години историја', suffix: '', unit: '', text: 'Илјадници' },
+  { target: 8000, label: 'Години историја', suffix: '+', unit: '', text: '' },
 ];
 
 export default function Stats() {

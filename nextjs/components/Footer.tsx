@@ -12,13 +12,13 @@ export default function Footer() {
       <div id="lokacija" className="footer-map">
         <div className="footer-map-info">
           <div>
-            <div className="footer-map-label" style={{ fontFamily: 'var(--font-barlow)' }}>Каде сме</div>
+            <div className="footer-map-label" style={{ fontFamily: 'var(--font-barlow)' }}>Каде сме?</div>
             <div className="footer-map-city" style={{ fontFamily: 'var(--font-barlow-condensed)' }}>Охрид,<br />Македонија</div>
           </div>
           <div className="footer-map-detail" style={{ fontFamily: 'var(--font-barlow)' }}>
-            бул. Туристичка бб<br />Охрид, Македонија<br /><br />
-            Пон — Пет &nbsp; 09:00 — 17:00<br />
-            Саб — Нед &nbsp; 10:00 — 15:00
+            Бул. Туристичка Бр. 77<br />Охрид, Северна Македонија<br /><br />
+            Пон — Пет &nbsp; 10:00 — 22:00<br />
+            Саб — Нед &nbsp; 10:00 — 22:00
           </div>
         </div>
         <div className="footer-map-frame">
@@ -32,12 +32,11 @@ export default function Footer() {
         </div>
       </div>
       <div className="footer-bottom">
-        <div className="footer-copy" style={{ fontFamily: 'var(--font-barlow)' }}>© 2025 Виртуелен Музеј · Сите права задржани · <Link href="#" style={{ fontFamily: 'var(--font-barlow)', color: 'inherit', textDecoration: 'none' }}>Приватност</Link></div>
         <div className="footer-social">
-          {['Facebook', 'Instagram', 'YouTube'].map((s) => (
-            <Link key={s} href="#" style={{ fontFamily: 'var(--font-barlow)' }}>{s}</Link>
-          ))}
+          <Link href="https://www.facebook.com/OhridTimeTravel/" target="_blank" rel="noopener noreferrer" style={{ fontFamily: 'var(--font-barlow)' }}>Facebook</Link>
+          <Link href="https://www.instagram.com/ohridtimetravel" target="_blank" rel="noopener noreferrer" style={{ fontFamily: 'var(--font-barlow)' }}>Instagram</Link>
         </div>
+        <div className="footer-copy" style={{ fontFamily: 'var(--font-barlow)' }}>© 2025 Виртуелен Музеј · Сите права задржани · <Link href="#" style={{ fontFamily: 'var(--font-barlow)', color: 'inherit', textDecoration: 'none' }}>Приватност</Link></div>
       </div>
     </footer>
   );
