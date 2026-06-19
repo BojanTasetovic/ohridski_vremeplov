@@ -1,7 +1,42 @@
 'use client';
-import { useRef, useState, useCallback } from 'react';
+import { useRef, useState, useCallback, useEffect } from 'react';
 import Link from 'next/link';
 import { type Room } from '@/data/rooms';
+
+function LazyVideo({ src, poster, style, className }: { src: string; poster?: string; style?: React.CSSProperties; className: string }) {
+  const videoRef = useRef<HTMLVideoElement>(null);
+  const loaded = useRef(false);
+
+  useEffect(() => {
+    const el = videoRef.current;
+    if (!el) return;
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting && !loaded.current) {
+          loaded.current = true;
+          el.src = src;
+          el.play().catch(() => {});
+          observer.disconnect();
+        }
+      },
+      { rootMargin: '300px' }
+    );
+    observer.observe(el);
+    return () => observer.disconnect();
+  }, [src]);
+
+  return (
+    <video
+      ref={videoRef}
+      className={className}
+      poster={poster}
+      style={style}
+      muted
+      loop
+      playsInline
+    />
+  );
+}
 
 export default function SobiCarousel({ rooms }: { rooms: Room[] }) {
   const trackRef = useRef<HTMLDivElement>(null);
@@ -33,12 +68,11 @@ export default function SobiCarousel({ rooms }: { rooms: Room[] }) {
         {rooms.map((room) => (
           <Link key={room.slug} href={`/soba/${room.slug}`} className="sobi-card">
             {room.cardVideo ? (
-              <video
+              <LazyVideo
                 className="sobi-card-bg sobi-card-bg--video"
                 src={room.cardVideo}
                 poster={room.image}
                 style={room.slug === 'vojni' ? { objectPosition: 'center 90%' } : undefined}
-                autoPlay muted loop playsInline
               />
             ) : (
               <div
