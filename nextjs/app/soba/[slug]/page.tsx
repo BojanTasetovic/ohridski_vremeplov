@@ -36,6 +36,7 @@ export default async function RoomPage({ params }: Props) {
           <video
             className="room-detail-bg room-detail-bg--video"
             src={room.video}
+            poster={room.image}
             autoPlay
             muted
             loop
@@ -72,7 +73,7 @@ export default async function RoomPage({ params }: Props) {
         <div className={`room-gallery${room.slug === 'umetnost' ? ' room-gallery--art' : ''}`}>
           {room.images.map((src, i) => (
             <div key={i} className="room-gallery-item">
-              <Image src={src} alt="" fill sizes="(max-width:768px) 100vw, 33vw" style={{ objectFit: room.slug === 'umetnost' ? 'contain' : 'cover' }} unoptimized />
+              <Image src={src} alt={`${room.nameEm} — слика ${i + 1}`} fill sizes="(max-width:768px) 100vw, 33vw" style={{ objectFit: room.slug === 'umetnost' ? 'contain' : 'cover' }} unoptimized />
             </div>
           ))}
         </div>

@@ -22,6 +22,7 @@ export default function PatuvanjeNizVremetoPage() {
           <video
             className="room-detail-bg room-detail-bg--video"
             src={room.video}
+            poster={room.image}
             autoPlay
             muted
             loop
@@ -54,6 +55,7 @@ export default function PatuvanjeNizVremetoPage() {
         <video
           className="room-detail-inline-video"
           src="/videos/patuvanje-niz-vremeto-hero.mp4"
+          poster="/images/room-entrance.jpg"
           autoPlay
           muted
           loop
@@ -64,7 +66,7 @@ export default function PatuvanjeNizVremetoPage() {
         <div className="room-gallery">
           {room.images.map((src, i) => (
             <div key={i} className="room-gallery-item">
-              <Image src={src} alt="" fill sizes="(max-width:768px) 100vw, 33vw" style={{ objectFit: 'cover' }} unoptimized />
+              <Image src={src} alt={`${room.nameEm} — слика ${i + 1}`} fill sizes="(max-width:768px) 100vw, 33vw" style={{ objectFit: 'cover' }} unoptimized />
             </div>
           ))}
         </div>

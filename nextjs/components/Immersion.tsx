@@ -18,7 +18,7 @@ export default function Immersion() {
       <div className="immersion-right rev d1">
         <Image
           src="/images/immersion-right-new.jpg"
-          alt=""
+          alt="Интерактивна дигитална проекција на историјата на Охрид"
           fill
           sizes="50vw"
           priority

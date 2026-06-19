@@ -1,17 +1,17 @@
 import type { Metadata } from 'next';
-import { Barlow, Barlow_Condensed } from 'next/font/google';
+import { Noto_Sans } from 'next/font/google';
 import './globals.css';
 
-const barlow = Barlow({
-  subsets: ['latin'],
-  weight: ['300', '400', '500'],
+const barlow = Noto_Sans({
+  subsets: ['latin', 'cyrillic'],
+  weight: ['200', '300', '400', '500', '600', '700', '800'],
   style: ['normal', 'italic'],
   variable: '--font-barlow',
   display: 'swap',
 });
 
-const barlowCondensed = Barlow_Condensed({
-  subsets: ['latin'],
+const barlowCondensed = Noto_Sans({
+  subsets: ['latin', 'cyrillic'],
   weight: ['200', '300', '400', '500', '600', '700', '800'],
   style: ['normal', 'italic'],
   variable: '--font-barlow-condensed',
@@ -23,8 +23,8 @@ const BASE = 'https://ohridski-vremeplov.vercel.app';
 export const metadata: Metadata = {
   metadataBase: new URL(BASE),
   title: {
-    default: 'Охридски Времеплов · Интерактивен Музеј во Охрид',
-    template: '%s · Охридски Времеплов',
+    default: 'Охридски Времеплов | Интерактивен Музеј и Нова Туристичка Атракција во Охрид',
+    template: '%s | Охридски Времеплов',
   },
   description:
     'Откријте ги 2000 години охридска историја низ 10 тематски интерактивни соби. Дигитален музеј со VR/AR, ласерски проектори и аудио-визуелно патување во срцето на Охрид.',
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
     locale: 'mk_MK',
     url: BASE,
     siteName: 'Охридски Времеплов',
-    title: 'Охридски Времеплов · Интерактивен Музеј во Охрид',
+    title: 'Охридски Времеплов | Интерактивен Музеј и Нова Туристичка Атракција во Охрид',
     description:
       'Откријте ги 2000 години охридска историја низ 10 тематски интерактивни соби со VR/AR и ласерски проектори во Охрид.',
     images: [
@@ -60,7 +60,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Охридски Времеплов · Интерактивен Музеј во Охрид',
+    title: 'Охридски Времеплов | Интерактивен Музеј и Нова Туристичка Атракција во Охрид',
     description: 'Откријте ги 2000 години охридска историја низ 10 интерактивни соби.',
     images: ['/logo/h_OTT_k.png'],
   },

@@ -19,7 +19,7 @@ export default function SobiPage() {
 
       {/* HERO */}
       <div className="za-nas-hero">
-        <video className="za-nas-hero-video" src="/videos/sobi-hero.mp4" autoPlay muted loop playsInline />
+        <video className="za-nas-hero-video" src="/videos/sobi-hero.mp4" poster="/images/hero-bg.jpg" autoPlay muted loop playsInline />
         <div className="za-nas-hero-over" />
         <div className="za-nas-hero-content">
           <div className="za-nas-eyebrow">Охридски Времеплов</div>

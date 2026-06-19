@@ -5,7 +5,7 @@ export default function Teatar() {
   return (
     <section className="teatar-section rev" id="teatar">
       <div className="teatar-bg">
-        <Image src="/rooms/teatar-bg.png" alt="" fill priority className="teatar-bg-img" style={{ objectFit: 'cover', objectPosition: 'center top', opacity: 0.38 }} />
+        <Image src="/rooms/teatar-bg.png" alt="Античкиот театар на Охрид" fill priority className="teatar-bg-img" style={{ objectFit: 'cover', objectPosition: 'center top', opacity: 0.38 }} />
         <div className="teatar-bg-over" />
       </div>
       <div className="teatar-content">
