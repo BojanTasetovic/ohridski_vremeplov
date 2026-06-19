@@ -36,10 +36,6 @@ export default function Hero({ videoSrc = '/videos/hero.mp4', posterSrc = '/imag
           <Link href="/kupi-bilet" className="btn-gold">Купи билет →</Link>
           <Link href="/sobi" className="btn-ghost">Истражувај соби</Link>
         </div>
-        <div className="hero-scroll">
-          <span>Скролај</span>
-          <div className="hero-scroll-line" />
-        </div>
       </div>
     </section>
   );
