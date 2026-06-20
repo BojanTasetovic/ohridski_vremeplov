@@ -27,6 +27,7 @@ export default function PatuvanjeNizVremetoPage() {
             muted
             loop
             playsInline
+            preload="none"
           />
         ) : (
           <div className="room-detail-bg" style={{ background: '#000' }} />
@@ -55,7 +56,7 @@ export default function PatuvanjeNizVremetoPage() {
         <video
           className="room-detail-inline-video"
           src="/videos/patuvanje-niz-vremeto-hero.mp4"
-          poster="/images/room-entrance.jpg"
+          poster="/images/patuvanje-inline-poster.jpg"
           autoPlay
           muted
           loop

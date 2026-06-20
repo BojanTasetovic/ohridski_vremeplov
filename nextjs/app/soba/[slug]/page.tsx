@@ -41,6 +41,7 @@ export default async function RoomPage({ params }: Props) {
             muted
             loop
             playsInline
+            preload="none"
           />
         ) : (
           <div

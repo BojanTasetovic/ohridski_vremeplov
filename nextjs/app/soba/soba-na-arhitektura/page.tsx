@@ -9,11 +9,11 @@ import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: 'Соба на Архитектурата · Охридски Времеплов',
-  alternates: { canonical: 'https://ohridski-vremeplov.vercel.app/soba/arhitektura' },
+  alternates: { canonical: 'https://ohridski-vremeplov.vercel.app/soba/soba-na-arhitektura' },
 };
 
 export default function ArhekturaPage() {
-  const room = getRoomBySlug('arhitektura');
+  const room = getRoomBySlug('soba-na-arhitektura');
   if (!room) notFound();
 
   return (
@@ -24,11 +24,12 @@ export default function ArhekturaPage() {
           <video
             className="room-detail-bg room-detail-bg--video"
             src={room.video}
-            poster={room.image}
+            poster="/images/arhitektura-hero.jpg"
             autoPlay
             muted
             loop
             playsInline
+            preload="none"
           />
         ) : (
           <div

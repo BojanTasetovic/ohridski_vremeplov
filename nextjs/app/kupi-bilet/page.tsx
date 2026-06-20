@@ -154,12 +154,9 @@ export default function KupiKartaPage() {
         <section className="vlez-cta-section">
           <div className="vlez-cta-inner">
             <p className="vlez-cta-label">Изберете датум и термин</p>
-            <Link href="#rezerviraj" className="vlez-cta-btn">
+            <Link href="/rezerviraj" className="vlez-cta-btn">
               Резервирај го твојот термин овде →
             </Link>
-            <p className="vlez-cta-note">
-              Системот за онлајн резервации наскоро ќе биде достапен. За резервации, контактирајте нè директно.
-            </p>
           </div>
         </section>
 

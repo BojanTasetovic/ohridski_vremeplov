@@ -581,6 +581,34 @@ footer{background:#060608;padding:40px 64px 32px;border-top:1px solid rgba(200,1
   .vlez-cta-section{padding:72px 24px}
   .vlez-cta-btn{padding:18px 40px}
 }
+/* ── REZERVIRAJ ── */
+.rez-page{min-height:100vh;background:var(--hero);padding:140px 24px 80px;display:flex;justify-content:center}
+.rez-inner{width:100%;max-width:560px}
+.rez-eyebrow{font-family:var(--font-barlow),sans-serif;font-size:11px;letter-spacing:.45em;text-transform:uppercase;color:var(--gold2);margin-bottom:16px}
+.rez-h1{font-family:var(--font-barlow-condensed),sans-serif;font-size:clamp(40px,6vw,72px);font-weight:700;line-height:1.05;text-transform:uppercase;color:#f5f2ec;margin-bottom:16px}
+.rez-h1 em{color:var(--gold2);font-style:italic}
+.rez-lead{font-size:15px;color:rgba(245,242,236,.6);line-height:1.65;margin-bottom:40px}
+.rez-form{display:flex;flex-direction:column;gap:20px}
+.rez-field{display:flex;flex-direction:column;gap:8px}
+.rez-row{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.rez-date-row{display:grid;grid-template-columns:80px 1fr 100px;gap:8px}
+.rez-label{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:rgba(245,242,236,.5);font-family:var(--font-barlow),sans-serif}
+.rez-optional{text-transform:none;letter-spacing:0;opacity:.6}
+.rez-input,.rez-select{background:rgba(255,255,255,.06);border:1px solid rgba(245,242,236,.12);border-radius:4px;padding:14px 16px;color:#f5f2ec;font-size:15px;font-family:var(--font-barlow),sans-serif;outline:none;width:100%;transition:border-color .2s}
+.rez-input:focus,.rez-select:focus{border-color:var(--gold2)}
+.rez-input::placeholder{color:rgba(245,242,236,.25)}
+.rez-select option{background:#1a1a1a;color:#f5f2ec}
+.rez-input[type="date"]::-webkit-calendar-picker-indicator{filter:invert(1);opacity:.4;cursor:pointer}
+.rez-total{display:flex;justify-content:space-between;align-items:center;padding:16px 0;border-top:1px solid rgba(245,242,236,.1);border-bottom:1px solid rgba(245,242,236,.1);color:rgba(245,242,236,.6);font-size:14px}
+.rez-total strong{color:#f5f2ec;font-size:22px;font-family:var(--font-barlow-condensed),sans-serif}
+.rez-submit{margin-top:8px;background:var(--gold2);color:#070708;font-family:var(--font-barlow),sans-serif;font-size:14px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;padding:18px 32px;border:none;border-radius:4px;cursor:pointer;transition:opacity .2s}
+.rez-submit:hover{opacity:.88}
+.rez-success{text-align:center;padding:60px 0;color:#f5f2ec}
+.rez-success-icon{font-size:48px;color:var(--gold2);margin-bottom:24px}
+.rez-success-title{font-family:var(--font-barlow-condensed),sans-serif;font-size:36px;font-weight:700;text-transform:uppercase;margin-bottom:12px}
+.rez-success-text{font-size:15px;color:rgba(245,242,236,.6);line-height:1.6}
+@media(max-width:640px){.rez-row{grid-template-columns:1fr}}
+
 @media(max-width:640px){
   .vlez-table thead{display:none}
   .vlez-table,.vlez-table tbody,.vlez-table tr,.vlez-table td{display:block;width:100%}

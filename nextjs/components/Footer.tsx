@@ -18,7 +18,9 @@ export default function Footer() {
           <div className="footer-map-detail" style={{ fontFamily: 'var(--font-barlow)' }}>
             Бул. Туристичка Бр. 77<br />Охрид, Северна Македонија<br /><br />
             Пон — Пет &nbsp; 10:00 — 22:00<br />
-            Саб — Нед &nbsp; 10:00 — 22:00
+            Саб — Нед &nbsp; 10:00 — 22:00<br /><br />
+            <Link href="mailto:ohrid@citytimetravel.com" style={{ color: 'inherit', textDecoration: 'none' }}>ohrid@citytimetravel.com</Link><br />
+            <Link href="tel:+38970377844" style={{ color: 'inherit', textDecoration: 'none' }}>070 377 844</Link>
           </div>
         </div>
         <div className="footer-map-frame">

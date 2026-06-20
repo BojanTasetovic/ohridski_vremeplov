@@ -27,6 +27,7 @@ export default function TancotIMuzikatePage() {
             muted
             loop
             playsInline
+            preload="none"
           />
         ) : (
           <div className="room-detail-bg" style={{ background: '#000' }} />
