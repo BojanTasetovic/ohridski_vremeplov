@@ -23,7 +23,12 @@ function LazyVideo({ src, poster, style, className }: { src: string; poster?: st
       { rootMargin: '300px' }
     );
     observer.observe(el);
-    return () => observer.disconnect();
+    return () => {
+      observer.disconnect();
+      el.pause();
+      el.removeAttribute('src');
+      el.load();
+    };
   }, [src]);
 
   return (
