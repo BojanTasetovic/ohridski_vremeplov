@@ -63,6 +63,7 @@ export default function ZaNas() {
 
       {/* HERO */}
       <div className="za-nas-hero">
+        <video className="za-nas-hero-video" src="/videos/animirano-logo-hero.mp4" poster="/images/sobi-hero-poster.jpg" autoPlay muted loop playsInline />
         <div className="za-nas-hero-over" />
         <div className="za-nas-hero-content">
           <div className="za-nas-eyebrow">Охридски Времеплов</div>

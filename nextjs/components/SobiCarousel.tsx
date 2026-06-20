@@ -5,6 +5,7 @@ import { type Room } from '@/data/rooms';
 
 function LazyVideo({ src, poster, style, className }: { src: string; poster?: string; style?: React.CSSProperties; className: string }) {
   const videoRef = useRef<HTMLVideoElement>(null);
+  const [playing, setPlaying] = useState(false);
   const loaded = useRef(false);
 
   useEffect(() => {
@@ -15,7 +16,7 @@ function LazyVideo({ src, poster, style, className }: { src: string; poster?: st
         if (entry.isIntersecting && !loaded.current) {
           loaded.current = true;
           el.src = src;
-          el.play().catch(() => {});
+          el.play().then(() => setPlaying(true)).catch(() => {});
           observer.disconnect();
         }
       },
@@ -26,15 +27,24 @@ function LazyVideo({ src, poster, style, className }: { src: string; poster?: st
   }, [src]);
 
   return (
-    <video
-      ref={videoRef}
-      className={className}
-      poster={poster}
-      style={style}
-      muted
-      loop
-      playsInline
-    />
+    <>
+      <video
+        ref={videoRef}
+        className={className}
+        style={style}
+        muted
+        loop
+        playsInline
+      />
+      {poster && !playing && (
+        <img
+          src={poster}
+          alt=""
+          loading="lazy"
+          style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', pointerEvents: 'none' }}
+        />
+      )}
+    </>
   );
 }
 
